@@ -1,0 +1,34 @@
+
+1@DESKTOP-PH97BKO MINGW64 ~
+$ git clone  http://github.com/baishatang8866/dust_bin.git
+Cloning into 'dust_bin'...
+fatal: unable to access 'http://github.com/baishatang8866/dust_bin.git/': Failed to connect to 127.0.0.1 port 7890 after 2092 ms: Could not connect to server
+
+1@DESKTOP-PH97BKO MINGW64 ~
+$ git clone https://github.com/baishatang8866/dust_bin.git
+Cloning into 'dust_bin'...
+fatal: unable to access 'https://github.com/baishatang8866/dust_bin.git/': Failed to connect to 127.0.0.1 port 7890 after 2101 ms: Could not connect to server
+
+1@DESKTOP-PH97BKO MINGW64 ~
+$ git pull
+fatal: not a git repository (or any of the parent directories): .git
+
+1@DESKTOP-PH97BKO MINGW64 ~
+$ git config --global http.proxy
+http://127.0.0.1:7890
+
+1@DESKTOP-PH97BKO MINGW64 ~
+$ git config --global --unset http.proxy
+
+1@DESKTOP-PH97BKO MINGW64 ~
+$ git config --global https.proxy
+
+1@DESKTOP-PH97BKO MINGW64 ~
+$ git clone https://github.com/baishatang8866/dust_bin.git
+Cloning into 'dust_bin'...
+warning: You appear to have cloned an empty repository.
+
+1@DESKTOP-PH97BKO MINGW64 ~
+$ git add README.md
+fatal: not a git repository (or any of the parent directories): .git
+
